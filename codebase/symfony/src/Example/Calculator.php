@@ -7,4 +7,14 @@ class Calculator
     {
         return $a + $b + $c;
     }
+
+    public function add(int $a, int $b): int
+    {
+        return $a + $b;
+    }
+
+    private function getDifference(int $a, int $b): int
+    {
+        return $a - $b;
+    }
 }

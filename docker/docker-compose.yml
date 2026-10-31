@@ -12,7 +12,7 @@ services:
 
   # MySQL Database
   server-mysql:
-    image: mysql:8.0.19
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: mypassword
@@ -21,7 +21,7 @@ services:
 
   # Optional MySQL Management Tool
   app-phpmyadmin:
-    image: phpmyadmin/phpmyadmin:5.0.1
+    image: phpmyadmin:5.2
     restart: always
     environment:
       PMA_HOST: server-mysql
