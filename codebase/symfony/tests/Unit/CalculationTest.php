@@ -50,7 +50,7 @@ class CalculationTest extends TestCase
         // Use reflection to access the private method
         $reflection = new \ReflectionClass(Calculator::class);
         $method = $reflection->getMethod('getDifference');
-        $method->setAccessible(true);
+        // $method->setAccessible(true);
         $difference = $method->invoke($calculator, $a, $b);
         $this->assertEquals($expectedDifference, $difference);
     }
