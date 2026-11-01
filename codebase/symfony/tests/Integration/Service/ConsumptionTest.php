@@ -1,5 +1,5 @@
 <?php
-namespace App\tests\Integration\Service;
+namespace App\Tests\Integration\Service;
 
 use App\Service\ConsumptionService;
 use PHPUnit\Framework\TestCase;

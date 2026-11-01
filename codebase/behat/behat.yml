@@ -1,0 +1,11 @@
+# Behat configuration file - but it doesn't work with the current version of Behat
+# so we need to use the composer.json file to autoload the classes.
+default:
+  suites:
+    default:
+      paths:
+        - "%paths.base%/features"
+      contexts:
+        - FeatureContext
+        - HomeContext
+  bootstrap: "%paths.base%/features/bootstrap/bootstrap.php"
