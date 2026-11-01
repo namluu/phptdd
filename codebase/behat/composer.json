@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "behat/behat": "^4.0",
+        "behat/mink": "^1.13"
+    }
+}
